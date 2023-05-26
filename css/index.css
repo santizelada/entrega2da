@@ -4,25 +4,40 @@
     font-family: 'Raleway', sans-serif;
     text-decoration-line: none;
     box-sizing: border-box;
+    list-style: none;
 
 }
-header{
-    background-color: #0a0908;
-    color: #f5fbef;
-    text-align: center;
-    height: 85px;
+
+
+/* encabezado */
+.header{
+    padding: 2rem 0%; 
+    background: #0a0908;
+}
+
+.containerNavLogo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: #EE8C0C;
+}
+header .containerNavLogo .navigation a{
+    color: #EE8C0C;
+}
+.navigation ul li{
+color: #EE8C0C;
+display: inline-block;
 
 }
 
-
-h1{
-    margin: 0;
-    padding: 0;
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
 }
+
+
+/*body*/
+
 
 .btn{
     color: #f5fbef;
@@ -31,10 +46,22 @@ h1{
     padding: 1%;
 }
 
-.subtitles{
+.guardian .divGuardian .btnGuardian{
+    width: 150px;
+    height: 190px;
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: #0a0908;
+}
+
+.guardian .divGuardian .btnGuardian a{
+    color: #fefefe; 
+    font-size: 250%;
 }
 
 section{
+    display: flex;
+    justify-content: center;
     /*align-items: center;*/
     text-align: center;
     height: 800px;
@@ -47,10 +74,17 @@ section{
     background-image: url(../img/batman1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
-.guardian:hover{
+
+.guardian .divGuardian .subtitles{
     font-size: 50px;
+    transition: 0.5s;
+}
+
+.guardian .divGuardian .subtitles:hover{
+    font-size: 70px;
 }
 
 .protector{
@@ -65,19 +99,6 @@ section{
     font-size: 50px;
  }
 
- .knight{
-    background-image: url(../img/batman10.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1em;
-    align-items: center;
-    /* margin-bottom: 15%;*/
-    padding-bottom: 35%;
- }
-
 .a-dark-knight{
     height:50px;
     width: 100%;
@@ -90,24 +111,56 @@ section{
     gap: 8em;
     /*align-items: center;*/
 }
- .divKnightRachel{
-    background-image: url(../img/rachel2.png);
-    height: 900%;
+
+
+
+ 
+.knight{
+    background-image: url(../img/batman10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+    align-items: center;
+    padding-bottom: 35%;
+ }
+
+.knight .contenedorKnights .divKnightRachel .rachel{
+    width: 450px;
+    height: 700px;
+}
+
+.knight .contenedorKnights .divKnightAlfred .alfred{
+    width: 500px;
+    height: 700px;
+}
+
+.knight .contenedorKnights .divKnightLucius .lucius{
     width: 400px;
+    height: 700px;
+}
+
+
+
+
+ .divKnightRachel{
+    background-color: rgb(22, 108, 95);
+    height: auto;
+    width: auto;
  }
 
  .divKnightAlfred{
-    background-color: darkgrey;
-    height: 900%;
-    width: 400px;
-    background-image: url(../img/alfred2.png);
+    background-color: rgb(171, 5, 5);
+    height: auto;
+    width: auto;
  }
 
  .divKnightLucius{
-    background-color: darkgrey;
-    height: 900%;
-    width: 400px;
-    background-image: url(../img/foxStillFrame2.png);
+    background-color: rgb(35, 107, 46);
+    height: auto;
+    width: auto;
  }
 
  .hero{
@@ -118,8 +171,13 @@ section{
 
  section .divGuardian{
     padding-top: 15%;
-    transition: 1.5s;
- }
+    transition: 0.7s;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .divGuardian:hover{
     color:#0a0908
 }
@@ -151,6 +209,12 @@ transition: 1.5s
     height:10%;
 
  }
+
+
+
+
+
+/*footer*/
 
 
  .pie-pagina{
