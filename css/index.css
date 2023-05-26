@@ -121,12 +121,21 @@ section{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 1em;
     align-items: center;
     padding-bottom: 35%;
  }
 
+
+.d-item{
+
+    height: 500px;
+    width: 900px;
+
+}
+
+ /*
 .knight .contenedorKnights .divKnightRachel .rachel{
     width: 450px;
     height: 700px;
@@ -162,6 +171,9 @@ section{
     height: auto;
     width: auto;
  }
+
+
+ */
 
  .hero{
     background-image: url(../img/Batman8.png);
