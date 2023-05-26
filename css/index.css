@@ -123,7 +123,7 @@ section{
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    align-items: center;
+    align-items: center;ñ
     padding-bottom: 35%;
  }
 
@@ -132,8 +132,9 @@ section{
 
     height: 500px;
     width: 900px;
-
 }
+
+.d-img
 
  /*
 .knight .contenedorKnights .divKnightRachel .rachel{
