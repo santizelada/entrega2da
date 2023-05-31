@@ -42,14 +42,64 @@ display: inline-block;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);  /* ojo acá 'auto' en vez de '1fr'*/
     background-color: blue;
+    justify-content: center;
+    align-items: center;
 }
 
 .vehiclesContainer .batpod{
-background-color: #EE8C0C;
+background-color: black;
 grid-column: 1/4;
-display: flex;
+display: grid;
+grid-template-columns: repeat(3, auto);
+align-items: center;
+justify-content:center;
+padding: 40px;
+column-gap: 20px;
 
 }
+.vehiclesContainer .batpod .title{
+ grid-column: 1/4;
+ text-align: center;
+ margin-bottom: 40px;
+ transition: 0.3s;
+}
+
+.vehiclesContainer .batpod .title:hover{
+    transform: scale(1.1);
+}
+
+.vehiclesContainer .batpod div img{
+height:auto;
+width: 100%;
+transition: 0.3s;
+margin-bottom: 40px;
+}
+
+.vehiclesContainer .batpod div img:hover{
+    transform: scale(1.1);
+    position: relative;
+    box-shadow: 0 0 90px #EE8C0C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .vehiclesContainer .tumbler{
 background-color: blueviolet;
