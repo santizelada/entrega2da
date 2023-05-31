@@ -23,11 +23,11 @@
 }
 header .containerNavLogo .navigation a{
     color: #EE8C0C;
+    text-decoration-line: none;
 }
 .navigation ul li{
 color: #EE8C0C;
 display: inline-block;
-
 }
 
 .navigation ul li a{
@@ -44,6 +44,7 @@ display: inline-block;
     background-color: #0a0908;
     font-size: 80%;
     padding: 1%;
+    text-decoration-line: none;
 }
 
 .guardian .divGuardian .btnGuardian{
@@ -51,6 +52,7 @@ display: inline-block;
     height: 190px;
     padding: 1%;
     margin-bottom: 1%;
+    text-decoration-line: none;
     background-color: #0a0908;
 }
 
@@ -123,7 +125,7 @@ section{
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    align-items: center;ñ
+    align-items: center;
     padding-bottom: 35%;
  }
 
@@ -223,10 +225,6 @@ transition: 1.5s
 
  }
 
-
-
-
-
 /*footer*/
 
 
@@ -277,15 +275,18 @@ transition: 1.5s
     text-align: center;
     transition: all 300ms ease;
 }
+
 .pie-pagina .grupo-1 .red-social a:hover{
     color: aqua;
 }
+
 .pie-pagina .grupo-2{
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
+
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }

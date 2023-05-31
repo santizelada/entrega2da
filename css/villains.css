@@ -10,8 +10,10 @@
 
 /* header */
 .header{
+
     padding: 2rem 0%; 
     background: #0a0908;
+    text-decoration: none;
 }
 
 .containerNavLogo{
@@ -32,6 +34,7 @@ display: inline-block;
 .navigation ul li a{
     display: block;
     padding: 0.5rem 1rem;
+    text-decoration-line: none;
 }
 
 

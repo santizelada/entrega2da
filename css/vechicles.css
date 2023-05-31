@@ -8,6 +8,7 @@
 
 }
 
+/*header*/
 .header{
     padding: 2rem 0%; 
     background: #0a0908;
@@ -34,11 +35,31 @@ display: inline-block;
 }
 
 
+/*main*/
 
+.vehiclesContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);  /* ojo acá 'auto' en vez de '1fr'*/
+    background-color: blue;
+}
 
+.vehiclesContainer .batpod{
+background-color: #EE8C0C;
+grid-column: 1/4;
+display: flex;
 
+}
 
+.vehiclesContainer .tumbler{
+background-color: blueviolet;
+grid-column: 1/4;
+}
 
+.vehiclesContainer .bat{
+    background-color: tomato;
+    grid-column: 1/4;
+}
 
 
 
