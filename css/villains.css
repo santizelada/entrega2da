@@ -43,9 +43,9 @@ display: inline-block;
 
 .villains{
     display: grid;
-    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,1fr);
+    margin: 0;
 }
 
 .villains section{
@@ -56,19 +56,18 @@ display: inline-block;
 }
 
 .villains .joker{
-    background:#771fa3;
+    background:#240046;
     grid-column-start: 1;
     grid-column-end: -1;
-    background-image: url(../img/joker1.jpg);
 }
 
 .villains .bane{
-    background:#8e0000;
+    background:#000000;
     grid-column-start: 1;
     grid-column-end: -1;
 }
 .villains .dent{
-    background:#120063;
+    background:#001524;
     grid-column-start: 1;
     grid-column-end: -1;
 }
