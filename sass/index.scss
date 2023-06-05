@@ -1,0 +1,229 @@
+$preferedBlack: #0a0908;
+$preferedOrange: #EE8C0C;
+
+
+
+.header{
+    padding: 1rem 0%;
+    background: $preferedBlack;
+
+    .containerNavLogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $preferedOrange; 
+        
+        /*.navigation a{
+            color: #EE8C0C;
+        }*/
+
+        .navigation ul li{
+            color: $preferedOrange;
+            display: inline-block;
+            
+        }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration-line: none;
+            color: $preferedOrange;
+        }
+
+    }
+}
+
+
+.containerSections{
+    display: grid;
+    grid-template-columns: repeat(3 , 3fr);
+    grid-template-rows: repeat(5, 3fr);
+    background-color: rgb(38, 10, 45);
+
+    .section1{
+
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-image: url(../img/batman1.jpg);
+        background-size: cover;
+        background-position: center;
+
+        .section1-texto{
+
+            text-align: center;
+            color: $preferedOrange;
+            transition: 0.3s;
+        }
+
+
+
+    }
+
+    .section2{
+        background-color: #0d2033;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background: linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7) ), url(../img/theTumbler2.webp);
+        background-size: cover;
+        background-position: center;
+
+        .section2-texto{
+            text-align: center;
+            color: #b3a394;
+        }
+
+    }
+
+    .section3{
+        background-color: #0d2033;
+          grid-column: 1/4;
+          grid-row: 3/4;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          background-image: url(../img/batman10.png);
+          background-size: cover;
+          background-position: center;
+
+          .section3-texto{
+            text-align: center;
+            color: #b3a394;
+        }    
+
+      }
+    
+      .section4{
+        background-color: #0d2033;
+          grid-column: 1/4;
+          grid-row: 4/5;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          background-image: url(../img/Batman8.png);
+          background-size: cover;
+          background-position: center;
+
+          .section4-texto{
+            text-align: center;
+            color: #b3a394;
+        }
+
+      }
+    
+      .section5{
+        background-color: #0d2033;
+          grid-column: 1/4;
+          grid-row: 5/6;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          background-image: url(../img/rd1.png);
+          background-size: cover;
+          background-position: center;
+
+          .section5-texto{
+            text-align: center;
+            color: #b3a394;
+        }
+
+      }
+    
+      .pie-pagina{
+        width: 100%;
+        background-color: $preferedBlack;
+    
+        .grupo-1{
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:50px;
+            padding: 45px 0px;
+    
+    
+            .box{
+    
+                figure img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+    
+    
+    
+                img{
+                    width: 250px;
+                }
+    
+                h2{
+                    color: #fff;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                }
+    
+                p{
+                    color: #efefef;
+                    margin-bottom: 10px;
+                }
+    
+    
+            }
+    
+            .red-social a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #fff;
+                margin-right: 10px;
+                background-color: #0d2033;
+                text-align: center;
+                transition: all 300ms ease;
+            }
+    
+            a:hover{
+                color: aqua;
+            }
+    
+    
+    
+        }
+    
+        .grupo-2{
+            background-color: #0a1a2a;
+            padding: 15px 10px;
+            text-align: center;
+            color: #fff;
+    
+            small{
+                font-size: 15px;
+            }
+    
+        }
+    
+    }
+
+
+
+}
+
+

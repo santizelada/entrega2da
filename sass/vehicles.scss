@@ -1,0 +1,267 @@
+$preferedBlack: #0a0908;
+$preferedOrange: #EE8C0C;
+
+.header{
+    padding: 1rem 0%;
+    background: $preferedBlack;
+
+    .containerNavLogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $preferedOrange; 
+        
+        /*.navigation a{
+            color: #EE8C0C;
+        }*/
+
+        .navigation ul li{
+            color: $preferedOrange;
+            display: inline-block;
+            
+        }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration-line: none;
+            color: $preferedOrange;
+        }
+
+    }
+    
+}
+
+
+.vehiclesContainer{
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);  /* ojo acá 'auto' en vez de '1fr'*/
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+
+    .batpod{
+        background-color: $preferedBlack;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        justify-content:space-evenly;
+        padding: 40px;
+        column-gap: 20px;
+
+
+     .title{
+        grid-column: span 4;
+        text-align: center;
+        margin-bottom: 40px;
+        transition: 0.3s;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+     }
+
+     div img{
+
+        height:auto;
+        width: 100%;
+        transition: 0.3s;
+        margin-bottom: 40px;
+
+     }
+      
+     div img:hover{
+        transform: scale(1.1);
+        position: relative;
+        box-shadow: 0 0 30px $preferedOrange;
+    }
+
+    }
+    
+    .batpod:hover{
+        font-size: 100px;
+        color: $preferedOrange;
+        text-shadow: 0px 0px 10px $preferedOrange;
+    }
+
+
+
+    .tumbler{
+
+        background-color: $preferedBlack;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px;
+        column-gap: 20px;
+
+
+        .title{
+            grid-column: span 4;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: 0.3s;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+           }
+
+
+
+
+
+        div img{
+            height:auto;
+            width: 100%;
+            transition: 0.3s;
+            margin-bottom: 40px;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            position: relative;
+            box-shadow: 0 0 30px $preferedOrange;
+        }
+    }
+
+     /* Ojo acá la conexión con Hover */
+    .tumbler:hover{
+
+        font-size: 100px;
+        color: $preferedOrange;
+        text-shadow: 0px 0px 10px $preferedOrange;
+    
+     }
+
+    .theBat{
+
+        background-color: $preferedBlack;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content:space-evenly;
+        padding: 40px;
+        column-gap: 20px;
+
+        
+
+        .title{
+
+            grid-column: span 4;
+            text-align: center;
+            margin-bottom: 40px;
+            transition: 0.3s;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+
+        }
+
+        div video{
+            height:auto;
+            width: 100%;
+            transition: 0.3s;
+            margin-bottom: 40px;
+
+            video:hover{
+                transform: scale(1.1);
+                position: relative;
+                box-shadow: 0 0 30px $preferedOrange;
+            }
+        }
+    }
+
+    .theBat:hover{
+
+        font-size: 100px;
+        color: $preferedOrange;
+        text-shadow: 0px 0px 10px $preferedOrange;
+
+    }
+
+
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: $preferedBlack;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+
+
+        .box{
+
+            figure img{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+
+
+            img{
+                width: 250px;
+            }
+
+            h2{
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        .red-social a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            margin-right: 10px;
+            background-color: #0d2033;
+            text-align: center;
+            transition: all 300ms ease;
+        }
+
+        a:hover{
+            color: aqua;
+        }
+
+
+
+    }
+
+    .grupo-2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+
+        small{
+            font-size: 15px;
+        }
+
+    }
+
+}
+

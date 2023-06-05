@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Raleway', sans-serif;
+  text-decoration-line: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+.header {
+  padding: 1rem 0%;
+  background: #0a0908;
+}
+.header .containerNavLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #EE8C0C;
+  /*.navigation a{
+      color: #EE8C0C;
+  }*/
+}
+.header .containerNavLogo .navigation ul li {
+  color: #EE8C0C;
+  display: inline-block;
+}
+.header .containerNavLogo .navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration-line: none;
+  color: #EE8C0C;
+}
+
+.vehiclesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto); /* ojo acá 'auto' en vez de '1fr'*/
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  /* Ojo acá la conexión con Hover */
+}
+.vehiclesContainer .batpod {
+  background-color: #0a0908;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  column-gap: 20px;
+}
+.vehiclesContainer .batpod .title {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+.vehiclesContainer .batpod div img {
+  height: auto;
+  width: 100%;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+.vehiclesContainer .batpod div img:hover {
+  transform: scale(1.1);
+  position: relative;
+  box-shadow: 0 0 30px #EE8C0C;
+}
+.vehiclesContainer .batpod:hover {
+  font-size: 100px;
+  color: #EE8C0C;
+  text-shadow: 0px 0px 10px #EE8C0C;
+}
+.vehiclesContainer .tumbler {
+  background-color: #0a0908;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  column-gap: 20px;
+}
+.vehiclesContainer .tumbler .title {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+.vehiclesContainer .tumbler div img {
+  height: auto;
+  width: 100%;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+.vehiclesContainer .tumbler img:hover {
+  transform: scale(1.1);
+  position: relative;
+  box-shadow: 0 0 30px #EE8C0C;
+}
+.vehiclesContainer .tumbler:hover {
+  font-size: 100px;
+  color: #EE8C0C;
+  text-shadow: 0px 0px 10px #EE8C0C;
+}
+.vehiclesContainer .theBat {
+  background-color: #0a0908;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  column-gap: 20px;
+}
+.vehiclesContainer .theBat .title {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+.vehiclesContainer .theBat div video {
+  height: auto;
+  width: 100%;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+.vehiclesContainer .theBat div video video:hover {
+  transform: scale(1.1);
+  position: relative;
+  box-shadow: 0 0 30px #EE8C0C;
+}
+.vehiclesContainer .theBat:hover {
+  font-size: 100px;
+  color: #EE8C0C;
+  text-shadow: 0px 0px 10px #EE8C0C;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a0908;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=vehicles.css.map */
