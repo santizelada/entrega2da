@@ -1,7 +1,15 @@
 $preferedBlack: #0a0908;
 $preferedOrange: #EE8C0C;
 
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;
+    text-decoration-line: none;
+    box-sizing: border-box;
+    list-style: none;
 
+}
 
 .header{
     padding: 1rem 0%;
@@ -27,6 +35,7 @@ $preferedOrange: #EE8C0C;
             padding: 0.5rem 1rem;
             text-decoration-line: none;
             color: $preferedOrange;
+            font-size: 130%;
         }
 
     }
@@ -38,6 +47,7 @@ $preferedOrange: #EE8C0C;
     grid-template-columns: repeat(3 , 3fr);
     grid-template-rows: repeat(5, 3fr);
     background-color: rgb(38, 10, 45);
+    font-size: 300%;
 
     .section1{
 
@@ -143,87 +153,104 @@ $preferedOrange: #EE8C0C;
 
       }
     
-      .pie-pagina{
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    text-align: center;
+
+    .grupo-1{
         width: 100%;
-        background-color: $preferedBlack;
-    
-        .grupo-1{
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap:50px;
-            padding: 45px 0px;
-    
-    
-            .box{
-    
-                figure img{
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 15px 0px;
+
+        .box{
+
+            figure{
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                }
-    
-    
-    
+
                 img{
                     width: 250px;
                 }
-    
-                h2{
-                    color: #fff;
-                    margin-bottom: 25px;
-                    font-size: 20px;
-                }
-    
-                p{
-                    color: #efefef;
-                    margin-bottom: 10px;
-                }
-    
-    
             }
-    
-            .red-social a{
-                display: inline-block;
-                text-decoration: none;
-                width: 45px;
-                height: 45px;
-                line-height: 45px;
+
+            h2{
                 color: #fff;
-                margin-right: 10px;
-                background-color: #0d2033;
-                text-align: center;
-                transition: all 300ms ease;
+                margin-bottom: 25px;
+                font-size: 20px;
             }
-    
-            a:hover{
-                color: aqua;
+
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
             }
+
+            ul li a{
+
+            text-decoration: none;
+
+            }
+
+            .red-social { 
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #fff;
+                    margin-right: 10px;
+                    background-color: #0d2033;
+                    text-align: center;
+                    transition: all 300ms ease;
+                }
     
+                a:hover{
+                    color: aqua;
+                }
     
-    
+                .linkIG{ 
+                  width:50px;
+                  height: 50px;  
+                    .logoIG{
+                    width:10%;
+                    height:10%;
+                
+                 } 
+                }
+            }
         }
-    
-        .grupo-2{
-            background-color: #0a1a2a;
-            padding: 15px 10px;
-            text-align: center;
-            color: #fff;
-    
-            small{
-                font-size: 15px;
-            }
-    
-        }
-    
     }
 
 
+    .grupo-2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
 
+        small{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 
 
