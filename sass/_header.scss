@@ -1,0 +1,24 @@
+.header{
+    padding: 1rem 0%;
+    background: $preferedBlack;
+
+    .containerNavLogo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $preferedOrange; 
+
+        .navigation ul li{
+            color: $preferedOrange;
+            display: inline-block;
+            
+        }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration-line: none;
+            color: $preferedOrange;
+            font-size: 130%;
+        }
+    }
+}

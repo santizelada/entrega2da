@@ -1,0 +1,27 @@
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    text-align: center;
+
+    .grupo-2{
+        background-color: $preferedBlack;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+        padding: 15px;
+        
+        .box{
+            ul a{
+            color: $preferedOrange;
+            margin-right: 90px;
+            }
+        }
+
+        h3{
+            font-size: 12px;
+            margin-bottom: 7px;
+            padding-top: 15px;
+        }
+    }
+}

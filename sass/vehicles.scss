@@ -1,3 +1,4 @@
+
 $preferedBlack: #0a0908;
 $preferedOrange: #EE8C0C;
 
@@ -42,6 +43,8 @@ $preferedOrange: #EE8C0C;
     }
     
 }
+
+
 
 
 .vehiclesContainer{
@@ -137,16 +140,16 @@ $preferedOrange: #EE8C0C;
             position: relative;
             box-shadow: 0 0 30px $preferedOrange;
         }
+
+        &:hover{
+
+            font-size: 100px;
+            color: $preferedOrange;
+            text-shadow: 0px 0px 10px $preferedOrange;
+        
+         }
+
     }
-
-     /* Ojo acá la conexión con Hover */
-    .tumbler:hover{
-
-        font-size: 100px;
-        color: $preferedOrange;
-        text-shadow: 0px 0px 10px $preferedOrange;
-    
-     }
 
     .theBat{
 
@@ -186,93 +189,10 @@ $preferedOrange: #EE8C0C;
             }
         }
     }
-
     .theBat:hover{
-
         font-size: 100px;
         color: $preferedOrange;
         text-shadow: 0px 0px 10px $preferedOrange;
-
-    }
-
-
-}
-
-.pie-pagina{
-    width: 100%;
-    background-color: $preferedBlack;
-
-    .grupo-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap:50px;
-        padding: 45px 0px;
-
-
-        .box{
-
-            figure img{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-
-
-
-            img{
-                width: 250px;
-            }
-
-            h2{
-                color: #fff;
-                margin-bottom: 25px;
-                font-size: 20px;
-            }
-
-            p{
-                color: #efefef;
-                margin-bottom: 10px;
-            }
-
-
-        }
-
-        .red-social a{
-            display: inline-block;
-            text-decoration: none;
-            width: 45px;
-            height: 45px;
-            line-height: 45px;
-            color: #fff;
-            margin-right: 10px;
-            background-color: #0d2033;
-            text-align: center;
-            transition: all 300ms ease;
-        }
-
-        a:hover{
-            color: aqua;
-        }
-
-
-
-    }
-
-    .grupo-2{
-        background-color: #0a1a2a;
-        padding: 15px 10px;
-        text-align: center;
-        color: #fff;
-
-        small{
-            font-size: 15px;
-        }
-
     }
 
 }
@@ -282,86 +202,25 @@ $preferedOrange: #EE8C0C;
     background-color: #0a141d;
     text-align: center;
 
-    .grupo-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap:50px;
-        padding: 15px 0px;
-
-        .box{
-
-            figure{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img{
-                    width: 250px;
-                }
-            }
-
-            h2{
-                color: #fff;
-                margin-bottom: 25px;
-                font-size: 20px;
-            }
-
-            p{
-                color: #efefef;
-                margin-bottom: 10px;
-            }
-
-            ul li a{
-
-            text-decoration: none;
-
-            }
-
-            .red-social { 
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                    color: #fff;
-                    margin-right: 10px;
-                    background-color: #0d2033;
-                    text-align: center;
-                    transition: all 300ms ease;
-                }
-    
-                a:hover{
-                    color: aqua;
-                }
-    
-                .linkIG{ 
-                  width:50px;
-                  height: 50px;  
-                    .logoIG{
-                    width:10%;
-                    height:10%;
-                
-                 } 
-                }
-            }
-        }
-    }
-
-
     .grupo-2{
-        background-color: #0a1a2a;
+        background-color: $preferedBlack;
         padding: 15px 10px;
         text-align: center;
         color: #fff;
+        padding: 15px;
+        
+        .box{
+            ul a{
+            color: $preferedOrange;
+            margin-right: 90px;
+            text-decoration: none;
+            }
+        }
 
-        small{
-            font-size: 15px;
+        h3{
+            font-size: 12px;
+            margin-bottom: 7px;
+            padding-top: 15px;
         }
     }
 }

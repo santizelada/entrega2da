@@ -1,5 +1,6 @@
 $preferedBlack: #0a0908;
 $preferedOrange: #EE8C0C;
+$preferedBlue: #0a1a2a;
 
 *{
     margin: 0%;
@@ -8,7 +9,6 @@ $preferedOrange: #EE8C0C;
     text-decoration-line: none;
     box-sizing: border-box;
     list-style: none;
-
 }
 
 .header{
@@ -20,10 +20,6 @@ $preferedOrange: #EE8C0C;
         justify-content: space-between;
         align-items: center;
         color: $preferedOrange; 
-        
-        /*.navigation a{
-            color: #EE8C0C;
-        }*/
 
         .navigation ul li{
             color: $preferedOrange;
@@ -37,7 +33,6 @@ $preferedOrange: #EE8C0C;
             color: $preferedOrange;
             font-size: 130%;
         }
-
     }
 }
 
@@ -47,7 +42,7 @@ $preferedOrange: #EE8C0C;
     grid-template-columns: repeat(3 , 3fr);
     grid-template-rows: repeat(5, 3fr);
     background-color: rgb(38, 10, 45);
-    font-size: 300%;
+    font-size: 250%;
 
     .section1{
 
@@ -57,20 +52,54 @@ $preferedOrange: #EE8C0C;
         justify-content: center;
         width: 100vw;
         height: 100vh;
-        display: flex;
-        background-image: url(../img/batman1.jpg);
+        // background-image: url(../img/batman1.jpg);
+        background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/batman1.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
+
+
 
         .section1-texto{
 
             text-align: center;
             color: $preferedOrange;
             transition: 0.3s;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(7, 1fr);
+            width:100vw;
+            height: 80vh;
+            transition: 0.3s;
+            align-items: center;
+            background: rgba(5, 7, 12, 0.10);  
+            height: 100vh;
+
+            h2{
+                margin: 40px;
+                grid-column: 1/-1;
+                grid-row: 1/2;
+
+                
+            }
+
+
+            p{
+                grid-column: 1/-1;
+                grid-row: 2/3;
+            }
         }
 
-
-
+        .btn1{
+            width: 150px;
+            height: 80px;
+            padding: 5px;
+            color: $preferedOrange;
+            background-color: $preferedBlack;
+            grid-column: 4/5;
+            grid-row: 3/4;
+            padding-top: 15px;
+        }
+        
     }
 
     .section2{
@@ -84,11 +113,22 @@ $preferedOrange: #EE8C0C;
         display: flex;
         background: linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7) ), url(../img/theTumbler2.webp);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
 
         .section2-texto{
             text-align: center;
             color: #b3a394;
+        }
+
+        .btn1{
+            width: 150px;
+            height: 80px;
+            padding: 5px;
+            color: $preferedOrange;
+            background-color: $preferedBlack;
+            grid-column: 4/5;
+            grid-row: 3/4;
+            padding-top: 15px;
         }
 
     }
@@ -103,12 +143,12 @@ $preferedOrange: #EE8C0C;
           height: 100vh;
           display: flex;
           background-image: url(../img/batman10.png);
+          background-repeat: no-repeat;
+          background-position: center center;
           background-size: cover;
-          background-position: center;
-
           .section3-texto{
             text-align: center;
-            color: #b3a394;
+            color: #f6f5f4;
         }    
 
       }
@@ -150,9 +190,7 @@ $preferedOrange: #EE8C0C;
             text-align: center;
             color: #b3a394;
         }
-
-      }
-    
+     }
 }
 
 .pie-pagina{
@@ -160,86 +198,24 @@ $preferedOrange: #EE8C0C;
     background-color: #0a141d;
     text-align: center;
 
-    .grupo-1{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap:50px;
-        padding: 15px 0px;
-
-        .box{
-
-            figure{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img{
-                    width: 250px;
-                }
-            }
-
-            h2{
-                color: #fff;
-                margin-bottom: 25px;
-                font-size: 20px;
-            }
-
-            p{
-                color: #efefef;
-                margin-bottom: 10px;
-            }
-
-            ul li a{
-
-            text-decoration: none;
-
-            }
-
-            .red-social { 
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                    color: #fff;
-                    margin-right: 10px;
-                    background-color: #0d2033;
-                    text-align: center;
-                    transition: all 300ms ease;
-                }
-    
-                a:hover{
-                    color: aqua;
-                }
-    
-                .linkIG{ 
-                  width:50px;
-                  height: 50px;  
-                    .logoIG{
-                    width:10%;
-                    height:10%;
-                
-                 } 
-                }
-            }
-        }
-    }
-
-
     .grupo-2{
-        background-color: #0a1a2a;
+        background-color: $preferedBlack;
         padding: 15px 10px;
         text-align: center;
         color: #fff;
+        padding: 15px;
+        
+        .box{
+            ul a{
+            color: $preferedOrange;
+            margin-right: 90px;
+            }
+        }
 
-        small{
-            font-size: 15px;
+        h3{
+            font-size: 12px;
+            margin-bottom: 7px;
+            padding-top: 15px;
         }
     }
 }
@@ -248,7 +224,7 @@ $preferedOrange: #EE8C0C;
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
