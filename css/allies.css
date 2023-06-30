@@ -32,7 +32,7 @@
 .containerAllies {
   background-color: blueviolet;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   color: white;
 }
@@ -71,15 +71,50 @@
 .containerAllies .sectionAlfred .div1 h2:hover {
   color: #0a1a2a;
 }
+.containerAllies .rachelLetter {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/rachelVG2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.containerAllies .rachelLetter .div2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 190px;
+  gap: 100px;
+}
+.containerAllies .rachelLetter .div2 .video2 {
+  height: 40%;
+  width: 50%;
+  border-radius: 20px;
+  transition: 0.7s;
+  justify-content: flex-start;
+}
+.containerAllies .rachelLetter .div2 .video2:hover {
+  box-shadow: 0 0 100px #73403C;
+}
+.containerAllies .rachelLetter .div2 h2 {
+  padding-top: 100px;
+  font-size: 300%;
+  text-align: center;
+  color: grey;
+  transition: 0.7s;
+}
+.containerAllies .rachelLetter .div2 h2:hover {
+  color: #73403C;
+}
 .containerAllies .sectionWomen {
   background-color: #000000;
   grid-column: 1/4;
-  grid-row: 2/3;
+  grid-row: 3/4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  /* background: linear-gradient(to right, /* rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ),  url(../img/batman2.jpg); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/batman1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -137,7 +172,7 @@
 .containerAllies .sectionFox {
   background-color: brown;
   grid-column: 1/4;
-  grid-row: 3/4;
+  grid-row: 4/5;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/fox5.png);
   background-repeat: no-repeat;
   background-position: center center;
