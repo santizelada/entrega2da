@@ -15,6 +15,8 @@ $preferedBlue: #0a1a2a;
     padding: 1rem 0%;
     background: #0a0908;
     padding-bottom: 20px;
+    min-width: 400px;
+
     .containerNavLogo {
       display: flex;
       justify-content: space-between;
@@ -42,6 +44,7 @@ $preferedBlue: #0a1a2a;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     color: white;
+    min-width: 400px;
   
     .sectionAlfred{
       grid-column: 1/4;
@@ -88,20 +91,24 @@ $preferedBlue: #0a1a2a;
   .rachelLetter{
     grid-column: 1/4;
     grid-row: 2/3;
-    background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5) ), url(../img/rachelVG2.png);
+    background: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4) ), url(../img/rachelVG2.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
         .div2{
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: center;
             flex-direction: column;
             padding: 190px;
             gap: 100px;
+            width: 100vw;
                 .video2{
-                    height: 40%;
+                    height: auto;
                     width: 50%;
                     border-radius: 20px; 
                     transition: 0.7s;
@@ -114,8 +121,9 @@ $preferedBlue: #0a1a2a;
                 }
 
                 h2{
+                    margin-left: 6%;
                     padding-top: 100px;
-                    font-size: 300%;
+                    font-size: 380%;
                     text-align: center;
                     color: grey;
                     transition: 0.7s;
@@ -130,18 +138,6 @@ $preferedBlue: #0a1a2a;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   
     .sectionWomen {
       background-color: #000000;
@@ -151,7 +147,7 @@ $preferedBlue: #0a1a2a;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       align-items: center;
-       background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ),  url(../img/batman1.jpg); 
+      background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5) ),  url(../img/batman1.jpg); 
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -163,7 +159,7 @@ $preferedBlue: #0a1a2a;
         position: relative;
         transition: 0.7s;
         border-radius: 20px;
-        background-image: url(../img/rachel01.png);
+        background-image: url(../img/gordonPoster.jpg);
         background-repeat: no-repeat;
         /* background-position: center center; */
         background-size: cover;
@@ -175,14 +171,20 @@ $preferedBlue: #0a1a2a;
         justify-content: center;
         font-size: 130%;
         box-shadow: 0 0 30px #f5f5f5;
-        
+
         &:hover {
           /* transform: scale(1.1); */
           position: relative;
           box-shadow: 0 0 300px #EE8C0C;
           height: 100%;
-          background-image: url(../img/rachelPoster.jpg);
+          background-image: url(../img/gordonPoster.jpg);
+
         }
+        h2{
+          font-size: 200%;  
+          color: $preferedBlack;
+          }
+
       }
   
       .catwoman {
@@ -216,7 +218,7 @@ $preferedBlue: #0a1a2a;
       background-color: brown;
       grid-column: 1/4;
       grid-row: 4/5;
-      background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/fox5.png);
+      background: linear-gradient(to right, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.8) ), url(../img/foxStillFrame3.png);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -225,14 +227,51 @@ $preferedBlue: #0a1a2a;
       align-items: center;
       justify-content: center;
       text-align: center;
+
+
+      .div3{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        padding: 190px;
+        gap: 100px;
+        width: 100vw;
+            .video3{
+                height: auto;
+                width: 50%;
+                border-radius: 20px; 
+                transition: 0.7s;
+                justify-content: flex-end;
+                    &:hover {
+                        box-shadow: 0 0 100px #73403C;
+                    }
+                    
+                
+            }
+
+            h2{
+                margin-left: 6%;
+                padding-top: 100px;
+                font-size: 300%;
+                text-align: center;
+                color: grey;
+                transition: 0.7s;
+                &:hover{
+                  color: #73403C;
+                }
+            }
     }
 
+    }
 }
 
 .pie-pagina {
     width: 100%;
     background-color: #0a0908;
     text-align: center;
+    min-width: 400px;
+
 
     .grupo-2 {
       background-color: #0a0908;
@@ -254,13 +293,212 @@ $preferedBlue: #0a1a2a;
       }
     }
   
-    @media screen and (max-width: 800px) {
-      .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-      }
-    }
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*-------------------------------------------------TABLETS----------------------------------------------*/
+
+
+  @media only screen and (max-width: 768px) {
+
+
+
+
+    .header {
+      padding: 1rem 0%;
+      background: #0a0908;
+      padding-bottom: 20px;
+      font-size: 50%;
+  
+      .containerNavLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #EE8C0C;
+
+      }
+      .containerNavLogo .navigation ul li {
+        color: #EE8C0C;
+        display: inline-block;
+      }
+      .containerNavLogo .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration-line: none;
+        color: #EE8C0C;
+      }
+    }
+
+
+
+
+
+    .containerAllies {
+
+      .sectionAlfred{
+        background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/alfredOscuroSketch.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+        
+            .div1{
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                    .video1{
+
+                        transition: 0.7s;
+                            &:hover {
+                                box-shadow: 0 0 100px #000000;
+                            }
+                            
+                        
+                    }
+  
+                    h2{
+                        // padding-top: 100px;
+                        // font-size: 300%;
+                        // text-align: center;
+                        // color: grey;
+                        transition: 0.7s;
+                        &:hover{
+                          color:#0a1a2a;
+                        }
+                    }
+            }
+  
+    }
+
+  }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*-------------------------------------------------Celulares----------------------------------------------*/
+@media screen and (min-width:460px) and (max-width: 480px) { 
+
+  .header {
+    padding: 1rem 0%;
+    background: #0a0908;
+    padding-bottom: 20px;
+    font-size: 30%;
+
+    .containerNavLogo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #EE8C0C;
+
+    }
+    .containerNavLogo .navigation ul li {
+      color: #EE8C0C;
+      display: inline-block;
+    }
+    .containerNavLogo .navigation ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration-line: none;
+      color: #EE8C0C;
+    }
+  }
+
+  .containerAllies {
+
+
+    .sectionAlfred{
+      background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/alfredOscuroSketch.png);
+      background-repeat: no-repeat;
+      background-position: 30% 60%;
+      background-size: cover;
+      
+          .div1{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              height: 600px;
+              width: 480px;
+              gap: 50px;
+
+                  .video1{
+                      height: 40%;
+                      width: 40%;
+                      border-radius: 20px; 
+                      transition: 0.7s;
+                          &:hover {
+                              box-shadow: 0 0 100px #000000;
+                          }
+                          
+                      
+                  }
+
+                  h2{
+                      padding-top: 100px;
+                      font-size: 300%;
+                      text-align: center;
+                      color: grey;
+                      transition: 0.7s;
+                      &:hover{
+                        color:#0a1a2a;
+                      }
+                  }
+          }
+
+  }
+
+}
+  
+}
