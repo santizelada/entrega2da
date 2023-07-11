@@ -1,6 +1,7 @@
 $preferedBlack: #0a0908;
 $preferedOrange: #EE8C0C;
 $preferedBlue: #0a1a2a;
+$preferedGray: #b3a394;
 
 *{
     margin: 0%;
@@ -83,14 +84,21 @@ $preferedBlue: #0a1a2a;
             }
 
             .btn1{
-                width: 8%;
-                height: 9%;
-                color: $preferedOrange;
-                background-color: $preferedBlack;
+                background-color: black;
+                padding: 5px 15px 5px 15px;
+                margin-bottom: 5%;
                 border-radius: 15px;
                 text-align: center;
-                margin-bottom: 45px;
+                text-decoration: none;
+                color:$preferedOrange;
+                transition: 0.3s;
                 border-style: solid;
+                font-size: 85%;
+
+                    &:hover{
+                        background-color: $preferedBlue;
+                        color: white;
+                    }                    
             }
         }
 
@@ -115,7 +123,7 @@ $preferedBlue: #0a1a2a;
         font-size: 80%;
 
                 text-align: center;
-                color: $preferedOrange;
+                color: $preferedGray;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -127,33 +135,35 @@ $preferedBlue: #0a1a2a;
                     border-radius: 15px;
                     text-align: center;
                     text-decoration: none;
-                    color:$preferedOrange;
+                    color:$preferedGray;
                     transition: 0.3s;
                     border-style: solid;
                     font-size: 85%;
 
-                    &:hover{
-                        background-color: #01090e;
-                    }
+                        &:hover{
+                            background-color: $preferedBlue;
+                            color: white;
+                        }                    
                 }
     }
 
     .section3{
         background-color: #0d2033;
         grid-column: 1/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(to right, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8) ), url(../img/alfredBar.png);
+        background: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4) ), url(../img/batmanWithBats.jpg);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center 30%;
         background-size: cover;
         gap: 8%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10% 70% 20%;
         align-items: center;
-        justify-content:space-evenly;
+        justify-content: center;
+        justify-items: center;
         flex-direction: row;
         text-align: center;
         padding: 5%;
@@ -163,7 +173,7 @@ $preferedBlue: #0a1a2a;
         h2{
             grid-column: 1/-1;
             grid-row: 1/2;
-            color: #b3a394;
+            color: #ffb048;
             transition: 0.3s;
 
             &:hover{
@@ -180,7 +190,7 @@ $preferedBlue: #0a1a2a;
             text-align: center;
             width: 8vw;
             text-decoration: none;
-            color:#b3a394;
+            color: $preferedOrange;
             transition: 0.3s;
             border-style: solid;
             font-size: 70%;
@@ -190,6 +200,7 @@ $preferedBlue: #0a1a2a;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 25%;
 
             &:hover{
                 background-color: $preferedBlue;
@@ -207,18 +218,17 @@ $preferedBlue: #0a1a2a;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 80% center;
-            height: 40%;
-            width: 60%;
+            height: 80%;
+            width: 100%;
             padding: 5%;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            color: #b3a394;
-            font-size: 130%;
+            color: $preferedOrange;
+            font-size: 100%;
             &:hover {
             box-shadow: 0 0 100px #f5f5f5;
-            height: 80%;
             }
             }
 
@@ -233,13 +243,13 @@ $preferedBlue: #0a1a2a;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 20% center;
-                height: 40%;
-                width: 60%;
-                font-size: 130%;
+                height: 80%;
+                width: 100%;
+                font-size: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color:#b3a394;
+                color:$preferedOrange;
 
 
                 &:hover {
@@ -261,10 +271,10 @@ $preferedBlue: #0a1a2a;
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: 45% center;
-                    height: 40%;
-                    width: 60%;
-                    color: #b3a394;
-                    font-size: 130%;
+                    height: 80%;
+                    width: 100%;
+                    color: $preferedOrange;
+                    font-size: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -281,7 +291,7 @@ $preferedBlue: #0a1a2a;
     .section4{
         background-color: #0d2033;
         grid-column: 1/4;
-        grid-row: 3/4;
+        grid-row: 2/3;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -290,27 +300,32 @@ $preferedBlue: #0a1a2a;
         background: linear-gradient(to right, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.6) ), url(../img/jokerClap.png);
         background-size: cover;
         background-position: center;
-        color: $preferedOrange;
+        color:$preferedGray;
         display: flex;
         flex-direction: column;
-        gap: 40%;
+        gap: 25%;
         min-width: 300px;
 
 
+        p{
+            font-size: 65%;
+            color:$preferedGray;
+        }
+
 
         .boton{
-            background-color: black;
+            background-color: $preferedBlack;
             padding: 5px 15px 5px 15px;
             border-radius: 15px;
             text-align: center;
             text-decoration: none;
-            color:$preferedOrange;
+            color: $preferedGray;
             transition: 0.3s;
             border-style: solid;
-            font-size: 85%;
+            font-size: 65%;
 
             &:hover{
-                background-color: #01090e;
+                background-color: $preferedBlack;
             }
         }
         
