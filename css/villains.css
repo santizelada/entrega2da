@@ -30,7 +30,7 @@
 .villains {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   margin: 0;
 }
 .villains section {
@@ -108,10 +108,9 @@
   align-items: center;
   justify-content: center;
   font-size: 130%;
-  box-shadow: 0 0 30px #f5f5f5;
 }
 .villains .dent .imagenDent:hover {
-  box-shadow: 0 0 300px #164471;
+  box-shadow: 0 0 100px #f5f5f5;
   height: 80%;
   width: 35%;
   background-image: url(../img/dent4Poster.jpg);
@@ -128,12 +127,66 @@
   transition: 0.3s;
 }
 .villains .dent #carouselDent:hover {
-  box-shadow: 0 0 100px #36007e;
+  box-shadow: 0 0 100px #f5f5f5;
+}
+.villains .catwoman {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: 3/4;
+  display: flex;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/catwoman1.png);
+  background-repeat: no-repeat;
+  background-position: 30% center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3%;
+}
+.villains .catwoman .imagenCatwoman {
+  margin: 0px;
+  position: relative;
+  transition: 0.7s;
+  border-radius: 20px;
+  background-image: url(../img/catwoman2poster.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+  width: 35%;
+}
+.villains .catwoman .imagenCatwoman:hover {
+  box-shadow: 0 0 100px #918c8c;
+  height: 80%;
+  width: 35%;
+  background-image: url(../img/catwoman2poster.webp);
+  background-position: center center;
+  background-size: cover;
+}
+.villains .catwoman .imagenCatwoman h2 {
+  font-size: 10%;
+}
+.villains .catwoman .editContainer {
+  background-color: rgba(128, 0, 128, 0);
+  height: auto;
+  width: 50%;
+  border-radius: 20px;
+  margin: 20px;
+}
+.villains .catwoman .editContainer .video4 {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.villains .catwoman .editContainer .video4:hover {
+  box-shadow: 0 0 100px #918c8c;
 }
 .villains .bane {
   background: #000000;
   grid-column-start: 1;
   grid-column-end: -1;
+  grid-row: 4/5;
 }
 
 .pie-pagina {

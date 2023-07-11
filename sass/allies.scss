@@ -22,9 +22,6 @@ $preferedBlue: #0a1a2a;
       justify-content: space-between;
       align-items: center;
       color: #EE8C0C;
-      // .navigation a {
-      //   color: #EE8C0C;
-      // }
     }
     .containerNavLogo .navigation ul li {
       color: #EE8C0C;
@@ -45,7 +42,8 @@ $preferedBlue: #0a1a2a;
     grid-template-columns: repeat(3, 1fr);
     color: white;
     min-width: 400px;
-  
+    margin: 0;
+
     .sectionAlfred{
       grid-column: 1/4;
       grid-row: 1/2;
@@ -53,17 +51,25 @@ $preferedBlue: #0a1a2a;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
       
           .div1{
               display: flex;
               align-items: center;
               justify-content: center;
               flex-direction: column;
-              padding: 190px;
-              gap: 100px;
+              padding: 0px;
+              gap: 15%;
+              height: auto;
+              width: 50%;
+
                   .video1{
-                      height: 50%;
-                      width: 60%;
+                      height: 100%;
+                      width: 100%;
                       border-radius: 20px; 
                       transition: 0.7s;
                           &:hover {
@@ -74,7 +80,7 @@ $preferedBlue: #0a1a2a;
                   }
 
                   h2{
-                      padding-top: 100px;
+                      padding-top: 0px;
                       font-size: 300%;
                       text-align: center;
                       color: grey;
@@ -98,21 +104,26 @@ $preferedBlue: #0a1a2a;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    padding-left: 60px;
 
         .div2{
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
             flex-direction: column;
-            padding: 190px;
-            gap: 100px;
-            width: 100vw;
+            padding: 0px;
+            gap: 60px;
+            height: auto;
+            width: 55%;
+
+
                 .video2{
-                    height: auto;
-                    width: 50%;
+                    height: 100%;
+                    width: 100%;
                     border-radius: 20px; 
                     transition: 0.7s;
-                    justify-content: flex-start;
+
                         &:hover {
                             box-shadow: 0 0 100px #73403C;
                         }
@@ -122,7 +133,7 @@ $preferedBlue: #0a1a2a;
 
                 h2{
                     margin-left: 6%;
-                    padding-top: 100px;
+                    padding-top: 0px;
                     font-size: 380%;
                     text-align: center;
                     color: grey;
@@ -229,6 +240,7 @@ $preferedBlue: #0a1a2a;
       text-align: center;
 
 
+
       .div3{
         display: flex;
         align-items: flex-end;
@@ -297,186 +309,26 @@ $preferedBlue: #0a1a2a;
   
 
 
+/*-------------------------------------------------TABLETS----------------------------------------------*/
 
 
+@media only screen and (max-width: 768px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*-------------------------------------------------TABLETS----------------------------------------------*/
-
-
-  @media only screen and (max-width: 768px) {
-
-
-
-
-    .header {
-      padding: 1rem 0%;
-      background: #0a0908;
-      padding-bottom: 20px;
-      font-size: 50%;
-  
-      .containerNavLogo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #EE8C0C;
-
-      }
-      .containerNavLogo .navigation ul li {
-        color: #EE8C0C;
-        display: inline-block;
-      }
-      .containerNavLogo .navigation ul li a {
-        display: block;
-        padding: 0.5rem 1rem;
-        text-decoration-line: none;
-        color: #EE8C0C;
-      }
-    }
-
-
-
-
-
-    .containerAllies {
-
-      .sectionAlfred{
-        background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/alfredOscuroSketch.png);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: cover;
-        
-            .div1{
-                display: flex;
-                height: 100vh;
-                width: 100vw;
-                    .video1{
-
-                        transition: 0.7s;
-                            &:hover {
-                                box-shadow: 0 0 100px #000000;
-                            }
-                            
-                        
-                    }
-  
-                    h2{
-                        // padding-top: 100px;
-                        // font-size: 300%;
-                        // text-align: center;
-                        // color: grey;
-                        transition: 0.7s;
-                        &:hover{
-                          color:#0a1a2a;
-                        }
-                    }
-            }
-  
-    }
-
-  }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*-------------------------------------------------Celulares----------------------------------------------*/
-@media screen and (min-width:460px) and (max-width: 480px) { 
-
-  .header {
-    padding: 1rem 0%;
-    background: #0a0908;
-    padding-bottom: 20px;
-    font-size: 30%;
-
-    .containerNavLogo {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #EE8C0C;
-
-    }
-    .containerNavLogo .navigation ul li {
-      color: #EE8C0C;
-      display: inline-block;
-    }
-    .containerNavLogo .navigation ul li a {
-      display: block;
-      padding: 0.5rem 1rem;
-      text-decoration-line: none;
-      color: #EE8C0C;
-    }
-  }
 
   .containerAllies {
-
 
     .sectionAlfred{
       background: linear-gradient(to right, rgb(0 0 0 / 0.3), rgb(0 0 0 / 0.3) ), url(../img/alfredOscuroSketch.png);
       background-repeat: no-repeat;
-      background-position: 30% 60%;
+      background-position: left center;
       background-size: cover;
       
           .div1{
               display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              height: 600px;
-              width: 480px;
-              gap: 50px;
-
+              height: 100vh;
+              width: 100vw;
                   .video1{
-                      height: 40%;
-                      width: 40%;
-                      border-radius: 20px; 
+
                       transition: 0.7s;
                           &:hover {
                               box-shadow: 0 0 100px #000000;
@@ -486,10 +338,10 @@ $preferedBlue: #0a1a2a;
                   }
 
                   h2{
-                      padding-top: 100px;
-                      font-size: 300%;
-                      text-align: center;
-                      color: grey;
+                      // padding-top: 100px;
+                      // font-size: 300%;
+                      // text-align: center;
+                      // color: grey;
                       transition: 0.7s;
                       &:hover{
                         color:#0a1a2a;
@@ -500,5 +352,22 @@ $preferedBlue: #0a1a2a;
   }
 
 }
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-.header {
+/* .header {
   padding: 1rem 0%;
   background: #0a0908;
   padding-bottom: 20px;
@@ -28,7 +28,75 @@
   padding: 0.5rem 1rem;
   text-decoration-line: none;
   color: #EE8C0C;
+} */
+
+
+
+
+
+/* ... Tu CSS existente ... */
+
+/* Estilos para el menú hamburguesa */
+.header .menu-toggle {
+  display: none; /* Ocultar el botón en pantallas grandes */
 }
+
+.header .navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header .navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.header .navigation ul li {
+  margin-right: 1rem;
+}
+
+.header .navigation ul li a {
+  color: #EE8C0C;
+  text-decoration: none;
+}
+
+/* Estilos para el menú hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .header .menu-toggle {
+    display: block; /* Mostrar el botón en pantallas pequeñas */
+    cursor: pointer;
+  }
+
+  .header .navigation ul {
+    display: none; /* Ocultar la lista en pantallas pequeñas */
+  }
+
+  .header .navigation.active ul {
+    display: flex; /* Mostrar la lista al hacer clic en el botón */
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .containerAllies {
   background-color: blueviolet;
@@ -37,6 +105,7 @@
   grid-template-columns: repeat(3, 1fr);
   color: white;
   min-width: 400px;
+  margin: 0;
 }
 .containerAllies .sectionAlfred {
   grid-column: 1/4;
@@ -45,18 +114,24 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .containerAllies .sectionAlfred .div1 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 190px;
-  gap: 100px;
+  padding: 0px;
+  gap: 15%;
+  height: auto;
+  width: 50%;
 }
 .containerAllies .sectionAlfred .div1 .video1 {
-  height: 50%;
-  width: 60%;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   transition: 0.7s;
 }
@@ -64,7 +139,7 @@
   box-shadow: 0 0 100px #000000;
 }
 .containerAllies .sectionAlfred .div1 h2 {
-  padding-top: 100px;
+  padding-top: 0px;
   font-size: 300%;
   text-align: center;
   color: grey;
@@ -83,29 +158,31 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  padding-left: 60px;
 }
 .containerAllies .rachelLetter .div2 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 190px;
-  gap: 100px;
-  width: 100vw;
+  padding: 0px;
+  gap: 60px;
+  height: auto;
+  width: 55%;
 }
 .containerAllies .rachelLetter .div2 .video2 {
-  height: auto;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   transition: 0.7s;
-  justify-content: flex-start;
 }
 .containerAllies .rachelLetter .div2 .video2:hover {
   box-shadow: 0 0 100px #73403C;
 }
 .containerAllies .rachelLetter .div2 h2 {
   margin-left: 6%;
-  padding-top: 100px;
+  padding-top: 0px;
   font-size: 380%;
   text-align: center;
   color: grey;
@@ -252,28 +329,6 @@
 
 /*-------------------------------------------------TABLETS----------------------------------------------*/
 @media only screen and (max-width: 768px) {
-  .header {
-    padding: 1rem 0%;
-    background: #0a0908;
-    padding-bottom: 20px;
-    font-size: 50%;
-  }
-  .header .containerNavLogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #EE8C0C;
-  }
-  .header .containerNavLogo .navigation ul li {
-    color: #EE8C0C;
-    display: inline-block;
-  }
-  .header .containerNavLogo .navigation ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration-line: none;
-    color: #EE8C0C;
-  }
   .containerAllies .sectionAlfred {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/alfredOscuroSketch.png);
     background-repeat: no-repeat;
@@ -292,65 +347,6 @@
     box-shadow: 0 0 100px #000000;
   }
   .containerAllies .sectionAlfred .div1 h2 {
-    transition: 0.7s;
-  }
-  .containerAllies .sectionAlfred .div1 h2:hover {
-    color: #0a1a2a;
-  }
-}
-/*-------------------------------------------------Celulares----------------------------------------------*/
-@media screen and (min-width: 460px) and (max-width: 480px) {
-  .header {
-    padding: 1rem 0%;
-    background: #0a0908;
-    padding-bottom: 20px;
-    font-size: 30%;
-  }
-  .header .containerNavLogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #EE8C0C;
-  }
-  .header .containerNavLogo .navigation ul li {
-    color: #EE8C0C;
-    display: inline-block;
-  }
-  .header .containerNavLogo .navigation ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration-line: none;
-    color: #EE8C0C;
-  }
-  .containerAllies .sectionAlfred {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/alfredOscuroSketch.png);
-    background-repeat: no-repeat;
-    background-position: 30% 60%;
-    background-size: cover;
-  }
-  .containerAllies .sectionAlfred .div1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 600px;
-    width: 480px;
-    gap: 50px;
-  }
-  .containerAllies .sectionAlfred .div1 .video1 {
-    height: 40%;
-    width: 40%;
-    border-radius: 20px;
-    transition: 0.7s;
-  }
-  .containerAllies .sectionAlfred .div1 .video1:hover {
-    box-shadow: 0 0 100px #000000;
-  }
-  .containerAllies .sectionAlfred .div1 h2 {
-    padding-top: 100px;
-    font-size: 300%;
-    text-align: center;
-    color: grey;
     transition: 0.7s;
   }
   .containerAllies .sectionAlfred .div1 h2:hover {
