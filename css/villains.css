@@ -9,12 +9,17 @@
 .header {
   padding: 1rem 0%;
   background: #0a0908;
+  min-width: 361px;
 }
 .header .containerNavLogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #EE8C0C;
+}
+.header .containerNavLogo h1 {
+  font-size: 150%;
+  margin-left: 15px;
 }
 .header .containerNavLogo .navigation ul li {
   color: #EE8C0C;
@@ -210,6 +215,50 @@
   font-size: 12px;
   margin-bottom: 7px;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 60%;
+  }
+  .pie-pagina {
+    font-size: 100%;
+  }
+  .pie-pagina .grupo-2 .box ul a {
+    color: #EE8C0C;
+    margin-right: 35px;
+  }
+  .pie-pagina .grupo-2 h3 {
+    font-size: 8px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+  }
+  .villains .joker #idCarouselJoker .jokerB .jokerBA .jokerBAT pJoker {
+    font-size: 1%;
+  }
+  .villains .joker #idCarouselJoker .jokerB .jokerBA .jokerBAT .tituloJoker {
+    font-size: 1%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .containerNavLogo {
+    font-size: 60%;
+  }
+  .header .containerNavLogo ul li a {
+    padding: 0.3rem 0.5rem;
+  }
+  .pie-pagina {
+    font-size: 80%;
+  }
+  .pie-pagina .grupo-2 .box ul a {
+    color: #EE8C0C;
+    margin-right: 35px;
+  }
+  .pie-pagina .grupo-2 h3 {
+    font-size: 8px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+  }
 }
 
 /*# sourceMappingURL=villains.css.map */

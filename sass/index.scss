@@ -16,7 +16,7 @@ $preferedGray: #b3a394;
 .header{
     padding: 1rem 0%;
     background: $preferedBlack;
-    min-width: 300px;
+    min-width: 307px;
     width: 100vw;
     .containerNavLogo{
         display: flex;
@@ -46,7 +46,7 @@ $preferedGray: #b3a394;
     grid-template-rows: repeat(5, 3fr);
     background-color: rgb(38, 10, 45);
     font-size: 250%;
-    min-width: 300px;
+    min-width: 307px;
 
     .section1{
         grid-column: 1/4;
@@ -59,7 +59,7 @@ $preferedGray: #b3a394;
         background-size: cover;
         background-position: center center;
         font-size: 80%;
-        min-width: 300px;
+        min-width: 307px;
 
 
         .section1-texto{
@@ -77,10 +77,13 @@ $preferedGray: #b3a394;
             align-items: center;
             background: rgba(5, 7, 12, 0.10);  
             height: 100vh;
-            
+            min-width: 307px;
+
 
             h2{
                 margin-top: 40px;
+                min-width: 307px;
+
             }
 
             .btn1{
@@ -94,16 +97,16 @@ $preferedGray: #b3a394;
                 transition: 0.3s;
                 border-style: solid;
                 font-size: 85%;
-
+                min-width: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                     &:hover{
                         background-color: $preferedBlue;
                         color: white;
                     }                    
             }
         }
-
-
-
     }
 
     .section2{
@@ -119,7 +122,7 @@ $preferedGray: #b3a394;
         background-size: cover;
         background-position: center center;
         gap: 55%;
-        min-width: 300px;
+        min-width: 307px;
         font-size: 80%;
 
                 text-align: center;
@@ -139,6 +142,10 @@ $preferedGray: #b3a394;
                     transition: 0.3s;
                     border-style: solid;
                     font-size: 85%;
+                    min-width: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                         &:hover{
                             background-color: $preferedBlue;
@@ -167,7 +174,7 @@ $preferedGray: #b3a394;
         flex-direction: row;
         text-align: center;
         padding: 5%;
-        min-width: 300px;
+        min-width: 307px;
 
 
         h2{
@@ -188,12 +195,12 @@ $preferedGray: #b3a394;
             padding: 5px 15px 5px 15px;
             border-radius: 15px;
             text-align: center;
-            width: 8vw;
+            width: 28%;
             text-decoration: none;
             color: $preferedOrange;
             transition: 0.3s;
             border-style: solid;
-            font-size: 70%;
+            font-size: 60%;
             grid-column: 2/3;
             grid-row: 3/4;
             text-align: center;
@@ -201,6 +208,8 @@ $preferedGray: #b3a394;
             align-items: center;
             justify-content: center;
             margin-bottom: 25%;
+            min-width: 90px;
+            min-height: px;
 
             &:hover{
                 background-color: $preferedBlue;
@@ -304,12 +313,13 @@ $preferedGray: #b3a394;
         display: flex;
         flex-direction: column;
         gap: 25%;
-        min-width: 300px;
+        min-width: 307px;
 
 
         p{
             font-size: 65%;
             color:$preferedGray;
+            text-align: center;
         }
 
 
@@ -322,7 +332,13 @@ $preferedGray: #b3a394;
             color: $preferedGray;
             transition: 0.3s;
             border-style: solid;
-            font-size: 65%;
+            font-size: 60%;
+            min-height: 50px;
+            min-width: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
 
             &:hover{
                 background-color: $preferedBlack;
@@ -346,7 +362,7 @@ $preferedGray: #b3a394;
         background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5) ), url(../img/rd1.png);
         background-size: cover;
         background-position: center;
-        min-width: 300px;
+        min-width: 307px;
         font-size: 60%;
 
         .section5-texto{
@@ -365,7 +381,7 @@ $preferedGray: #b3a394;
     width: 100%;
     background-color: #0a141d;
     text-align: center;
-    min-width: 300px;
+    min-width: 307px;
 
 
     .grupo-2{
@@ -390,150 +406,142 @@ $preferedGray: #b3a394;
     }
 }
 
+//--------------------------------------------------------------------------------TABLETS---------------------------------------------------------------------------------/
 
 @media only screen and (max-width: 800px) {
 
 
-.header{
-    font-size: 50%;
-}
+        .header{
+            font-size: 50%;
+        }
+
+        .containerSections{
+
+                .section1{
+                    grid-column: 1/4;
+                    grid-row: 1/2;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100vw;
+                    height: 100vh;
+                    background: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4) ), url(../img/batman1.jpg);
+                    background-size: cover;
+                    background-position: 80% center;
+                    font-size: 65%;
+
+                                .section1-texto{
+
+                                                    .btn1{
+                                                    width: 12%;
+                                                    height: 9%;
+                                                    color: $preferedOrange;
+                                                    background-color: $preferedBlack;
+                                                    border-radius: 15px;
+                                                    text-align: center;
+                                                    margin-bottom: 45px;
+                                                    padding: 5px;
+                                                }
+
+                                    
+                                }
 
 
-.containerSections{
+                }
+                
 
-    .section1{
-        grid-column: 1/4;
-        grid-row: 1/2;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-        background: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.4) ), url(../img/batman1.jpg);
-        background-size: cover;
-        background-position: 80% center;
-        font-size: 65%;
+                .section2{
+                    font-size: 50%;
+
+                    .boton{
+                        padding:10px 0px 10px 0px;
+                    }
+
+                }
+
+                .section3{
+                    font-size: 50%;
+                    gap: 5%;
+
+                    .botonAllies{
+                        justify-self: center;
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+                        background-color: black;
+                        padding: 5px 15px 5px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #b3a394;
+                        transition: 0.3s;
+                        border-style: solid;
+                        font-size: 90%;
+                        width: 30%;
+                        height: 50%;
+                        text-align: center;
+                        margin-bottom: 100px;
+
+                        
+                        &:hover{
+                            background-color: #01090e;
+                        }
+                    }
 
 
-        .section1-texto{
+                }
 
-                .btn1{
-                width: 12%;
-                height: 9%;
-                color: $preferedOrange;
-                background-color: $preferedBlack;
-                border-radius: 15px;
-                text-align: center;
-                margin-bottom: 45px;
-                padding: 5px;
+                .section4{
+                    font-size: 50%;
+
+
+                    p{
+                        font-size: 90%;
+                    }
+
+                    .boton{
+                        font-size: 100%;
+                        padding:10px 0px 10px 0px;
+                        &:hover{
+
+                        }
+                    }
+                }
+
+                .section5{
+                    font-size: 40%;
+                }
+
+
+
+        }
+        
+
+            .pie-pagina{
+                font-size: 50%;
+
+                .grupo-2{
+                    .box{
+                        ul a{
+                        color: $preferedOrange;
+                        margin-right: 35px;
+                        }
+                    }
+
+                    h3{
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                        padding-top: 12px;
+                    }
+                }
             }
 
-            
-        }
-
-
-    }
-
-
-    .section2{
-        font-size: 50%;
-    }
-
-    .section3{
-        font-size: 50%;
-        gap: 5%;
-
-        .boton{
-            justify-self: center;
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background-color: black;
-            padding: 5px 15px 5px 15px;
-            border-radius: 15px;
-            text-align: center;
-            text-decoration: none;
-            color: #b3a394;
-            transition: 0.3s;
-            border-style: solid;
-            font-size: 75%;
-            width: 60%;
-            text-align: center;
-
-            &:hover{
-                background-color: #01090e;
             }
-        }
 
-
-    }
-
-    .section4{
-        font-size: 50%;
-
-
-
-
-        .boton{
-            justify-self: center;
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background-color: black;
-            padding: 5px 15px 5px 15px;
-            border-radius: 15px;
-            text-align: center;
-            text-decoration: none;
-            color: #b3a394;
-            transition: 0.3s;
-            border-style: solid;
-            font-size: 75%;
-            width: 15%;
-            text-align: center;
-
-            &:hover{
-                background-color: #01090e;
-            }
-        }
-
-
-
-
-
-    }
-
-    .section5{
-        font-size: 40%;
-    }
-
-
-
-}
-
-.pie-pagina{
-    font-size: 50%;
-
-    .grupo-2{
-        .box{
-            ul a{
-            color: $preferedOrange;
-            margin-right: 35px;
-            }
-        }
-
-        h3{
-            font-size: 10px;
-            margin-bottom: 5px;
-            padding-top: 12px;
-        }
-    }
-}
-
-}
-
-
+//--------------------------------------------------------------------------------CELULARES---------------------------------------------------------------------------------/
 @media only screen and (max-width: 480px) {
 
 
     .header{
-        font-size: 30%;
+        font-size: 38%;
     }
     
     
@@ -571,27 +579,26 @@ $preferedGray: #b3a394;
     
         .section2{
             font-size: 50%;
+
+
         }
     
         .section3{
             font-size: 50%;
             gap: 5%;
 
-            .boton{
-                justify-self: center;
-                grid-column: 2/3;
-                grid-row: 3/4;
-                background-color: black;
-                padding: 5px 15px 5px 15px;
-                border-radius: 15px;
-                text-align: center;
-                text-decoration: none;
-                color: #b3a394;
-                transition: 0.3s;
-                border-style: solid;
-                font-size: 55%;
-                width: 100%;
-                text-align: center;
+
+
+            .div1{
+                background-position: 68% center;
+            }
+
+            .div2{
+                background-position: 32% center;
+            }
+
+            .botonAllies{
+
     
                 &:hover{
                     background-color: #01090e;
@@ -601,30 +608,22 @@ $preferedGray: #b3a394;
     
     
         .section4{
-            font-size: 50%;
             
-        .boton{
-            justify-self: center;
-            grid-column: 2/3;
-            grid-row: 3/4;
-            background-color: black;
-            padding: 5px 15px 5px 15px;
-            border-radius: 15px;
-            text-align: center;
-            text-decoration: none;
-            color: #b3a394;
-            transition: 0.3s;
-            border-style: solid;
-            font-size: 45%;
-            width: 25%;
-            text-align: center;
-            width: 20%;
-
-            &:hover{
-                background-color: #01090e;
+            .section4{
+                font-size: 50%;
+        
+        
+                p{
+                    font-size: 90%;
+                }
+        
+                .boton{
+                    font-size: 130%;
+        
+                    &:hover{
+                    }
+                }
             }
-        }
-
         }
     
         .section5{
